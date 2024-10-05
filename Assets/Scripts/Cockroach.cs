@@ -9,7 +9,7 @@ public class Cockroach : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 velocity;
     [SerializeField] public int direction; // The direction; 0 is north, 1 is east, 2 is south, 3 is west (the cockroach shall move in a square)
-    [SerializeField] private float changeInt;
+    [SerializeField] private float intervalBeforeDirectionChange;
     public float timeSinceChange;
 
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class Cockroach : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time - timeSinceChange >= changeInt)
+        if (Time.time - timeSinceChange >= intervalBeforeDirectionChange)
         {
             ChangeDirection();
             timeSinceChange = Time.time;

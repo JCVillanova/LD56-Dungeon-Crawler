@@ -294,6 +294,7 @@ MonoBehaviour:
   xSpeed: 5
   ySpeed: 5
   direction: 0
+  intervalBeforeDirectionChange: 2
   timeSinceChange: 0
 --- !u!50 &989383762
 Rigidbody2D:
@@ -688,6 +689,7 @@ MonoBehaviour:
   xSpeed: 5
   ySpeed: 5
   direction: 0
+  intervalBeforeDirectionChange: 2
   timeSinceChange: 0
 --- !u!61 &1743192229
 BoxCollider2D:
