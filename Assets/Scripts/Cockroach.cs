@@ -9,7 +9,7 @@ public class Cockroach : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 velocity;
     [SerializeField] public int direction; // The direction; 0 is north, 1 is east, 2 is south, 3 is west (the cockroach shall move in a square)
-    private float changeInt = 2.0f;
+    [SerializeField] private float changeInt;
     public float timeSinceChange;
 
     // Start is called before the first frame update
@@ -29,7 +29,7 @@ public class Cockroach : MonoBehaviour
         }
         else
         {
-            Debug.Log(direction);
+            //Debug.Log(direction);
             if (direction == 0)
             {
                 rb.velocity = new Vector2(0, ySpeed);
@@ -60,5 +60,28 @@ public class Cockroach : MonoBehaviour
         {
             direction += 1;
         }
+    }
+
+    public void reverse()
+    {
+        if (direction == 0)
+        {
+            Debug.Log("reversing");
+            direction = 2;
+        }
+        else if (direction == 1)
+        {
+            direction = 3;
+        }
+        else if (direction == 2)
+        {
+            direction = 0;
+        }
+        else if (direction == 3)
+        {
+            direction = 1;
+        }
+        Debug.Log("Direction is: ");
+        Debug.Log(direction);
     }
 }

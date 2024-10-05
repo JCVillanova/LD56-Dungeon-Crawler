@@ -13,7 +13,7 @@ public class Wall : MonoBehaviour
             entity = c.gameObject.GetComponent<Cockroach>();
             if (entity != null)
             {
-                entity.ChangeDirection();
+                entity.reverse();
                 entity.timeSinceChange = Time.time;
             }
         }
