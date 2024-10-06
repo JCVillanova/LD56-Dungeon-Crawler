@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 276697012}
   - component: {fileID: 276697011}
   - component: {fileID: 276697010}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cockroach (2)
   m_TagString: Cockroach
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ Transform:
   m_GameObject: {fileID: 276697009}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.91, y: 3.17, z: 0}
+  m_LocalPosition: {x: -7.91, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 989383762}
   - component: {fileID: 989383761}
   - component: {fileID: 989383760}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cockroach (1)
   m_TagString: Cockroach
   m_Icon: {fileID: 0}
@@ -738,7 +738,7 @@ Transform:
   m_GameObject: {fileID: 1278012818}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.01, y: 1.82, z: 0}
+  m_LocalPosition: {x: -13.01, y: 5.1, z: 0}
   m_LocalScale: {x: 20, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -927,7 +927,7 @@ GameObject:
   - component: {fileID: 1743192225}
   - component: {fileID: 1743192228}
   - component: {fileID: 1743192229}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cockroach
   m_TagString: Cockroach
   m_Icon: {fileID: 0}
