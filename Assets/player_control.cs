@@ -6,7 +6,7 @@ public class player_control : MonoBehaviour
 {
     Rigidbody2D rb2d;
     Animator anim;
-    public float moveX, lastX = 0, moveY, lastY = -1;
+    public float moveX, lastX, moveY, lastY, lastDir = 4;
     bool isMoving = false;
     public float playerSpeed = 10.0f;
     int biteCount = 1;
@@ -16,27 +16,32 @@ public class player_control : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        anim.SetFloat("lastDir", lastDir);
     }
 
     // Update is called once per frame
     void Update()
     {
         moveX = Input.GetAxisRaw("Horizontal");
+        if(moveX != 0) lastX = moveX;
         moveY = Input.GetAxisRaw("Vertical");
+        if(moveY != 0) lastY = moveY;
         anim.SetFloat("moveX", moveX);
         anim.SetFloat("moveY", moveY);
-        if(moveX != 0) {
-            lastX = moveX;
+        if(moveX != 0 || moveY != 0) {
             isMoving = true;
-        }
-        if(moveY != 0) {
-            lastY = moveY;
-            isMoving = true;
-        }
-        if(moveX == 0 && moveY == 0) {
+            if(moveX == 0) {
+                if(lastY == 1) {
+                    lastDir = 3;
+                } else lastDir = 4;
+            } else if (moveY == 0) {
+                if(lastX == 1) {
+                    lastDir = 2;
+                } else lastDir = 1;
+            }
+        } else {
             isMoving = false;
-            anim.SetFloat("lastX", lastX);
-            anim.SetFloat("lastY", lastY);
+            anim.SetFloat("lastDir", lastDir);
         }
         anim.SetBool("isMoving", isMoving);
 
