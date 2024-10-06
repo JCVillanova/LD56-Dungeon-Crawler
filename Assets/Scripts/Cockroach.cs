@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Cockroach : MonoBehaviour
 {
@@ -94,5 +95,14 @@ public class Cockroach : MonoBehaviour
         }
         Debug.Log("Direction is: ");
         Debug.Log(direction);
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Player is ded, must respawn");
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 }
