@@ -102,7 +102,7 @@ public class Cockroach : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player is ded, must respawn");
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Game");
         }
     }
 }
