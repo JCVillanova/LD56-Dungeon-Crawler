@@ -9,7 +9,6 @@ public class player_control : MonoBehaviour
     public float moveX, lastX, moveY, lastY, lastDir = 4;
     bool isMoving = false;
     public float playerSpeed = 10.0f;
-    int biteCount = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -44,11 +43,6 @@ public class player_control : MonoBehaviour
             anim.SetFloat("lastDir", lastDir);
         }
         anim.SetBool("isMoving", isMoving);
-
-        if(Input.GetButtonDown("Bite")) {
-            Debug.Log("Bite called (" + biteCount + ")");
-            biteCount++;
-        }
     }
 
     private void FixedUpdate()
