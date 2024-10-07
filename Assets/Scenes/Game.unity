@@ -27736,9 +27736,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1753027354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 9739097c08c234a4a8fd7d3f5770f6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xSpeed: 0
+  ySpeed: 0
+  direction: 0
+  intervalBeforeDirectionChange: 0
+  timeSinceChange: 0
+  north: {fileID: 0}
+  east: {fileID: 0}
+  south: {fileID: 0}
+  west: {fileID: 0}
 --- !u!61 &1745268392
 BoxCollider2D:
   m_ObjectHideFlags: 0
