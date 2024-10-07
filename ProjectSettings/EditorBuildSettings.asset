@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: e4f34201bf2edf547ba88e9317df4454
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/TestCockroaches.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 83eed635b1db3494cb0d3db79b657e77
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: d587ac9f4b946e2449302e4396712fac
   m_configObjects: {}
