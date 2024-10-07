@@ -13,10 +13,8 @@ public class pause_menu : MonoBehaviour
     void Update()
     {
         if(Input.GetButtonDown("Pause") && !pausePanel.activeSelf) {
-            Debug.Log("paused");
             Pause();
         } else if(Input.GetButtonDown("Pause")) {
-            Debug.Log("continued");
             Continue();
         }
     }
