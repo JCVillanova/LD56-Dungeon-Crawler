@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 9081817242421907754}
   - component: {fileID: 6191091185412632706}
   m_Layer: 0
-  m_Name: Floor Palette
+  m_Name: Barricade Palette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
