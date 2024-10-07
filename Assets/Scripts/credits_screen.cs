@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class title_screen : MonoBehaviour
+public class credits_screen : MonoBehaviour
 {
-    public string gameScene, creditsScene;
+    public string titleScene;
 
     // Start is called before the first frame update
     void Start()
@@ -19,18 +19,8 @@ public class title_screen : MonoBehaviour
         
     }
 
-    public void Play() 
+    public void Back()
     {
-        SceneManager.LoadScene(gameScene);
-    }
-
-    public void Credits()
-    {
-        SceneManager.LoadScene(creditsScene);
-    }
-
-    public void Quit()
-    {
-        Application.Quit();
+        SceneManager.LoadScene(titleScene);
     }
 }
